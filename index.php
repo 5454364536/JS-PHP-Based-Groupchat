@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("localhost", "root", "3WwkXdNLn7uNps4k", "main");
+$conn = new mysqli();
 $chat = $conn->query("SELECT * FROM `chat_log` ORDER BY `id` DESC LIMIT 25");
 $textContent = [];
 $_COOKIE['username'] =   filter_var($_COOKIE['username'], FILTER_SANITIZE_STRING);
