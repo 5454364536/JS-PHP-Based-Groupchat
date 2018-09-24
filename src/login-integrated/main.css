@@ -1,0 +1,297 @@
+body {
+    background: #AB47BC;
+    overflow-X: hidden;
+    overflow-Y: auto;
+    font-family: sans-serif;
+}
+.chat-container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 8px;
+    background: #FAFAFA;
+    border-radius: 5px;
+    height: 90%;
+    max-height: 1000px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.chat-header {
+    font-family: Raleway;
+    font-size: 40px;
+    color: #2a2b2e;
+    height: 10%;
+    line-height: 70px;
+    padding-left: 32px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+.chat-textarea {
+    transition: all .3s;
+    height: 78%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.chat-textarea::-webkit-scrollbar {
+    width: 10px;
+}
+.chat-textarea::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0); 
+}
+.chat-textarea:hover::-webkit-scrollbar-track {
+    background: rgba(0,0,0,.1);
+}
+.chat-submit-area {
+    height: 85px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left: 16px;
+    padding-top: 4.5%;
+    margin-left: .01px;
+    background: #FAFAFA;
+}
+.chat-submit {
+    transition: .1s all ease-in-out;
+    cursor: pointer;
+    width: 11%;
+    height: 45px;
+    background: #3F51B5;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    min-width: 100px;
+    float: right;
+    margin-right: 4%;
+    margin-top: 5px;
+}
+.chat-submit:hover {
+    box-shadow: 0 8px 28px rgba(0,0,0,0.15), 0 8px 10px rgba(0,0,0,0.15);
+}
+.chat-submit:focus {
+    outline: 0px;
+}
+.chat-submit:active {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.text-table {
+    width: 100%;
+    margin-top: 10px;
+}
+.text-username {
+    width: 15%;
+    padding-top: 18px;
+    padding-right: 2px;
+    min-width: 130px;
+    font-weight: 600;
+    text-align: right;
+}
+.text-username:after {
+    content: ":"
+}
+.text-content {
+    width: 100%;
+    padding-top: 10px;
+}
+.text-content-textarea {
+    position: relative;
+    overflow-X: hidden;
+    float: left;
+    width: 40%;
+    resize: none;
+    background: #EEEEEE;
+    border-radius: 2px;
+    border: 0px;
+    margin-left: 10px;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.3);
+    word-break: normal;
+}
+.text-content-self {
+    width: 100%;
+    padding-top: 10px;
+    margin-right: 25%;
+}
+.text-content-textarea-self {
+    overflow-X: hidden;
+    float: right;
+    width: 40%;
+    resize: none;
+    background: #65b369;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.3);
+    border: 0px;
+    margin-right: 5%;
+    border-radius: 2px;
+    padding: 10px;
+}
+.text-username-content {
+    padding-top: 25px;
+}
+.text-username-self {
+    width: 15%;
+    padding-top: 18px;
+    padding-left: 2px;
+    min-width: 130px;
+    font-weight: 600;
+    text-align: left;
+}
+.chat-area-spacer {
+    height: 150px;
+}
+.chat-text-holder {
+    display: inline-block;
+    transition: all .15s;
+    width: 80%;
+    font-family: sans-serif;
+    letter-spacing: .2px;
+    height: 48px;
+    transform: translateY(5%);
+    background: #FAFAFA;
+    border: 0px;
+    border: 1px solid #dadada;
+    margin-left: 16px;
+    border-radius: 4px;
+    color: #444444;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.chat-text-holder:hover {
+    box-shadow: 0 8px 28px rgba(0,0,0,0.15), 0 8px 10px rgba(0,0,0,0.15);
+}
+.chat-input {
+    height: 48px;
+    width: 90%;
+    font-size: 20px;
+    border: 0px;
+    background: rgba(0,0,0,0);
+    padding-left: 8px;
+    color: #757575;
+}
+.chat-input:focus {
+    outline: 0;
+}
+.chat-emoji-holder {
+    transition: all .2s;
+    width: 30px;
+    display: inline-block;
+    height: 30px;
+    margin-top: 9px;
+    margin-left: 8px;
+    float: left;
+    cursor: pointer;
+    border: 1px solid #b4b4b4;
+    border-radius: 4px;
+    background: #FAFAFA;
+    color: #757575;
+    position: relative;
+    z-index: 4;
+}
+.chat-emoji-holder:focus {
+    outline: 0;
+}
+.chat-emoji-holder:hover {
+    border: 1px solid #8b8b8b;
+    color: #565656;
+    box-shadow: 0 2px 28px rgba(0,0,0,0.1), 0 2px 10px rgba(0,0,0,0.1);
+}
+.chat-emoji-holder:active {
+    transform: scale(.9);
+}
+.file-upload {
+    width: 75%;
+    cursor: pointer;
+}
+.file-submit {
+    cursor: pointer;
+    height: 20px;
+    width: 20%;
+    transition: all .1s;
+    border: 1px solid #b4b4b4;
+    background: #EEEEEE;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.file-submit:hover {
+    box-shadow: 0 1px 6px rgba(0,0,0,0.15), 0 1px 4px rgba(0,0,0,0.30);
+}
+.file-submit:focus {
+    outline: 0;
+}
+.emoji-form {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.timeout {
+    display: block;
+    position: absolute;
+    background: rgba(0,0,0,.65);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top:0;
+    left:0;
+}
+.timeout-container {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    height: 200px;
+    width: 100%;
+}
+.timeout-text {
+    font-size: 17.5px;
+    margin-top: 30px;
+}
+.emoji-box {
+    display: block;
+    height: 160px;
+    width: 170px;
+    position: absolute;
+    background: #FAFAFA;
+    margin-top: -173px;
+    margin-left: -1px;
+    border: 1px solid #cecece;
+    z-index: 4;
+    border-radius: 5px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.19), 0 0px 6px rgba(0,0,0,0.23);
+}
+.emoji-box-holder {
+    width: calc(100% - 20px);
+    height: 140px;
+    border: 1px solid #cecece;
+    margin: 10px 10px 0px 10px;
+    overflow-Y: auto;
+    border-radius: 2px;
+}
+.emoji-box-item {
+    margin: 4px;
+    display: inline-block;
+}
+.emoji-popup {
+    height: 30px;
+    display: block;
+    background: #484a51;
+    position: absolute;
+    z-index: 10;
+    color: #F5F5F5;
+    border-radius: 5px;
+    margin-top: -37px;
+    margin-left: -8px;
+    text-align: center;
+    line-height: 30px;
+    font-family: sans-serif;
+    border: 1px solid #2f3136;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.emoji-box-holder .emoji-box-item .emoji-box-img {
+    cursor: pointer;
+}
