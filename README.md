@@ -1,4 +1,4 @@
-# JS-PHP-Based-Groupchat
+# Groupchat
 
 ## Will probably overhaul in near future
 
