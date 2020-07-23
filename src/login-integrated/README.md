@@ -1,4 +1,4 @@
-This is the login-integrated branck of JS-PHP-Based-Groupchat
+This is the login-integrated branck of Groupchat
 
 In order to obtain maximum use from this branch, you will need to have a backend framework already in place.
 
